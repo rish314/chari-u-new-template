@@ -135,30 +135,95 @@
                         </div>
                     </div>
                 </div>
+                <!--  ちょこっとニュース -->
                 <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                    お知らせ</h2>
-                <div class="p-4">
-                    <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                            <p class="text-[#101518] text-base font-bold leading-tight">新しい自転車モデル入荷</p>
-                            <p class="text-[#5c778a] text-sm font-normal leading-normal">最新のマウンテンバイクと
-                                ロードバイクのコレクションをご覧ください。</p>
+                    ちょこっとニュース
+                </h2>
+                <div class="px-4 overflow-x-auto">
+                    <div class="news-scroll-container">
+                        <!-- News Item 1 -->
+                        <div class="news-item-container flex-shrink-0 w-80">
+                            <div class="news-cloud-box">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex-1">
+                                        <p class="text-[#101518] text-base font-bold leading-tight">新しい自転車モデル入荷</p>
+                                        <p class="text-[#5c778a] text-sm font-normal leading-normal mt-1">最新のマウンテンバイクと
+                                            ロードバイクのコレクションをご覧ください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bicycle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                     viewBox="0 0 256 256">
+                                    <path
+                                            d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"
+                                    ></path>
+                                </svg>
+                            </div>
                         </div>
-                        <div
-                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 news-item-1"
-                        ></div>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                        <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                            <p class="text-[#101518] text-base font-bold leading-tight">サマーセール</p>
-                            <p class="text-[#5c778a] text-sm font-normal leading-normal">対象の自転車と
-                                アクセサリーがお得な価格でご購入いただけます。</p>
+
+                        <!-- News Item 2 -->
+                        <div class="news-item-container flex-shrink-0 w-80">
+                            <div class="news-cloud-box">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex-1">
+                                        <p class="text-[#101518] text-base font-bold leading-tight">サマーセール</p>
+                                        <p class="text-[#5c778a] text-sm font-normal leading-normal mt-1">対象の自転車と
+                                            アクセサリーがお得な価格でご購入いただけます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bicycle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                     viewBox="0 0 256 256">
+                                    <path
+                                            d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"
+                                    ></path>
+                                </svg>
+                            </div>
                         </div>
-                        <div
-                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 news-item-2"
-                        ></div>
+
+                        <!-- News Item 3 (Additional example) -->
+                        <div class="news-item-container flex-shrink-0 w-80">
+                            <div class="news-cloud-box">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex-1">
+                                        <p class="text-[#101518] text-base font-bold leading-tight">メンテナンスキャンペーン</p>
+                                        <p class="text-[#5c778a] text-sm font-normal leading-normal mt-1">期間限定で自転車の
+                                            点検・整備が特別価格でご利用いただけます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bicycle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                     viewBox="0 0 256 256">
+                                    <path
+                                            d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- News Item 4 -->
+                        <div class="news-item-container flex-shrink-0 w-80">
+                            <div class="news-cloud-box">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex-1">
+                                        <p class="text-[#101518] text-base font-bold leading-tight">新店舗オープン情報</p>
+                                        <p class="text-[#5c778a] text-sm font-normal leading-normal mt-1">来月、新しい店舗が
+                                            名古屋市内にオープン予定です。お楽しみに！</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bicycle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                     viewBox="0 0 256 256">
+                                    <path
+                                            d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
