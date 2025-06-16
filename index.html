@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
     <link
             rel="stylesheet"
@@ -23,6 +22,7 @@
 
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,"/>
 
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body>
@@ -40,7 +40,7 @@
                     <a class="text-[#101518] text-sm font-medium leading-normal" href="#">店舗案内</a>
                     <!-- お問い合わせ -->
                     <button
-                            class="group flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#fa7633] leading-normal tracking-[0.015em]"
+                            class="group contact-button"
                     >
                         <a class="text-white text-sm font-medium font-bold leading-normal flex items-center" href="/contact.html">
                             <svg class="w-4 h-4 mr-1 transition-transform duration-300 ease-in-out group-hover:rotate-12 group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,8 +57,7 @@
         <div class="w-full">
             <div class="@[480px]:px-4">
                 <div
-                        class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-4"
-                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7RYG2_ZjoK_pTUAgmlQLx0kzwcrIe_6edoOK3ZHvNWNvOXPXpnVQoTTAefTnWRTVgaV0mtB9t6X2-f_tk4lzxDhOkMyEPHfUHUfciZOO3tvEuT2xz4DIPryFhynOSjJG0-cbCcge0zzSt9aeRUaI6UoSmwWRfGyPQoMji2pqP-Vg8KEdYnZfIs37iXFaridd2f5rJnrR_vf0SnSZKc7-g43V-osEdSoF09_39MwKf7WBXMvJUDm8-EQgE9y77-hNeZ4AG5fiXQM2O");'
+                        class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-4 hero-background"
                 >
                     <div class="flex flex-col gap-2 text-center">
                         <h1
@@ -72,7 +71,7 @@
                         </h2>
                     </div>
                     <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#b2d1e5] text-[#101518] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                            class="primary-button @[480px]:h-12 @[480px]:px-5 @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                     >
                         <span class="truncate">自転車を見る</span>
                     </button>
@@ -84,7 +83,7 @@
             <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                 <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">サービス</h2>
                 <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                    <div class="flex flex-1 gap-3 rounded-lg border border-[#d4dde2] bg-gray-50 p-4 flex-col">
+                    <div class="service-card">
                         <div class="text-[#101518]" data-icon="Bicycle" data-size="24px" data-weight="regular">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
                                  viewBox="0 0 256 256">
@@ -99,13 +98,13 @@
                                 幅広い種類の自転車を取り揃えております。 初心者から上級者まで対応可能です。
                             </p>
                             <button
-                                    class="min-w-[84px] max-w-[480px] cursor-pointer mt-2 rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#b2d1e5] text-[#101518] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                                    class="primary-button mt-2 rounded-lg @[480px]:h-12 @[480px]:px-5 @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                             >
                                 <span class="truncate">自転車を探す</span>
                             </button>
                         </div>
                     </div>
-                    <div class="flex flex-1 gap-3 rounded-lg border border-[#d4dde2] bg-gray-50 p-4 flex-col">
+                    <div class="service-card">
                         <div class="text-[#101518]" data-icon="Wrench" data-size="24px" data-weight="regular">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
                                  viewBox="0 0 256 256">
@@ -120,7 +119,7 @@
                                 あなたの自転車を最高の状態に保ちます。</p>
                         </div>
                     </div>
-                    <div class="flex flex-1 gap-3 rounded-lg border border-[#d4dde2] bg-gray-50 p-4 flex-col">
+                    <div class="service-card">
                         <div class="text-[#101518]" data-icon="Gear" data-size="24px" data-weight="regular">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
                                  viewBox="0 0 256 256">
@@ -146,8 +145,7 @@
                                 ロードバイクのコレクションをご覧ください。</p>
                         </div>
                         <div
-                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP01kVTIx0FT5NDaqXzWunxsqWyDW3imR-vqUxC3Sswm1vodpisctQ8yY7MnlZSsU6eAim9uNPtgw5QbjViQPZMqU00NKQ1FbzWun_BwbMufc9_bY3kba0k2Frcm_DHsDKlxIyeuulfDvXLx05rbWeH6Mzzn4fVtLXkhLudi8CrVfUk8cCoIOb09QHI2zvmm2k3vGrrcdrOb_rKRJaaHe5_mU-EzA2xU7r97f2G0Q7shcEVyc83wD-eyl14wD2u1e6U9wRjc2O5SEB");'
+                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 news-item-1"
                         ></div>
                     </div>
                 </div>
@@ -159,8 +157,7 @@
                                 アクセサリーがお得な価格でご購入いただけます。</p>
                         </div>
                         <div
-                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOVsSwbAQD9weGI7TzW0Ft6SmfrAi94fdXYFK7Nma-sHYsEwdXRZWt2xWKTE1vLLi_k8Ics_0rvvvZ216k0-ipUSFiwl8AnajmwuW0oIslq2Z8QIVTFh9XcbOD5d1zTpFriGABDemzYuaV06x32z5cu6FFBHNSlUCXE2I4rlm1gViWt1zAVblfcxGgDQZ4XX3VvfKNVC_YEJGJcp3-2WL2fph9DlVxM58frDH2vsPQ5nlKngj9EHY2azO4-REXSONdgGoQUguMAT4q");'
+                                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 news-item-2"
                         ></div>
                     </div>
                 </div>
@@ -168,7 +165,7 @@
         </div>
         <!-- 業務日誌 (フルワイド) -->
         <div class="w-full">
-            <div class="bg-[#4aaa8d] py-10">
+            <div class="bg-[#4aaa8d] py-10 business-diary-bg">
                 <div class="container mx-auto px-4 md:px-8">
                     <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                         <div class="flex flex-col gap-4 text-center md:text-left md:w-1/2">
@@ -180,23 +177,19 @@
                                 最近毎日更新！偉いぞ僕！
                             </p>
                             <div class="flex justify-center md:justify-start">
-                                <button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e53768] text-white text-base font-bold leading-normal tracking-[0.015em] transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                                <a href="https://chari-u.com/subnikki.htm">
+                                    <button class="diary-button">
                                     <span class="truncate flex items-center">
                                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                                         </svg>
                                         業務日誌を見る
                                     </span>
-                                </button>
+                                    </button>
+                                </a>
                             </div>
                         </div>
-                        <div class="md:w-1/2 relative">
-                            <div class="w-full h-64 md:h-80 bg-center bg-cover bg-no-repeat rounded-xl shadow-xl transform transition-transform duration-300 hover:scale-105" style='background-image: url("top/diary.png");'>
-                                <div class="absolute -bottom-4 -right-4 bg-white text-[#4aaa8d] p-3 rounded-full shadow-lg transform rotate-12 font-bold animate-pulse">
-                                    毎日更新中!
-                                </div>
-                            </div>
-                        </div>
+                        <div class="md:w-1/2 relative"></div>
                     </div>
                 </div>
             </div>
@@ -231,7 +224,7 @@
                 </div>
                 <div class="flex px-4 py-3 justify-start">
                     <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#b2d1e5] text-[#101518] text-sm font-bold leading-normal tracking-[0.015em]"
+                            class="primary-button"
                     >
                         <span class="truncate flex items-center">
                             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

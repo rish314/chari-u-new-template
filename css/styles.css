@@ -1,0 +1,149 @@
+/* Main Styles for Chari-U Website */
+
+/* Hero Section Background */
+.hero-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7RYG2_ZjoK_pTUAgmlQLx0kzwcrIe_6edoOK3ZHvNWNvOXPXpnVQoTTAefTnWRTVgaV0mtB9t6X2-f_tk4lzxDhOkMyEPHfUHUfciZOO3tvEuT2xz4DIPryFhynOSjJG0-cbCcge0zzSt9aeRUaI6UoSmwWRfGyPQoMji2pqP-Vg8KEdYnZfIs37iXFaridd2f5rJnrR_vf0SnSZKc7-g43V-osEdSoF09_39MwKf7WBXMvJUDm8-EQgE9y77-hNeZ4AG5fiXQM2O");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* News Item Background 1 */
+.news-item-1 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP01kVTIx0FT5NDaqXzWunxsqWyDW3imR-vqUxC3Sswm1vodpisctQ8yY7MnlZSsU6eAim9uNPtgw5QbjViQPZMqU00NKQ1FbzWun_BwbMufc9_bY3kba0k2Frcm_DHsDKlxIyeuulfDvXLx05rbWeH6Mzzn4fVtLXkhLudi8CrVfUk8cCoIOb09QHI2zvmm2k3vGrrcdrOb_rKRJaaHe5_mU-EzA2xU7r97f2G0Q7shcEVyc83wD-eyl14wD2u1e6U9wRjc2O5SEB");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* News Item Background 2 */
+.news-item-2 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOVsSwbAQD9weGI7TzW0Ft6SmfrAi94fdXYFK7Nma-sHYsEwdXRZWt2xWKTE1vLLi_k8Ics_0rvvvZ216k0-ipUSFiwl8AnajmwuW0oIslq2Z8QIVTFh9XcbOD5d1zTpFriGABDemzYuaV06x32z5cu6FFBHNSlUCXE2I4rlm1gViWt1zAVblfcxGgDQZ4XX3VvfKNVC_YEJGJcp3-2WL2fph9DlVxM58frDH2vsPQ5nlKngj9EHY2azO4-REXSONdgGoQUguMAT4q");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Business Diary Section Background */
+.business-diary-bg {
+  background-image: linear-gradient(to right, rgba(50, 130, 100, 0.9), rgba(144, 238, 144, 0.7)), url("https://chari-u.com/img/top/main06.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* Layout Styles */
+.layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.layout-content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  flex: 1;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid #eaeef1;
+  padding: 0.75rem 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+/* Button Styles */
+.contact-button {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: #fa7633;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.015em;
+}
+
+.primary-button {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: #b2d1e5;
+  color: #101518;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.015em;
+}
+
+.diary-button {
+  display: flex;
+  min-width: 120px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 3rem;
+  padding: 0 1.5rem;
+  background-color: #e53768;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.015em;
+  transform: translateZ(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.diary-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #e53768;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2.5rem;
+}
+
+/* Service Card Styles */
+.service-card {
+  display: flex;
+  flex: 1;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d4dde2;
+  background-color: #f9fafb;
+  padding: 1rem;
+  flex-direction: column;
+}
