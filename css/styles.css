@@ -129,7 +129,6 @@ footer {
   gap: 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid #d4dde2;
-  background-color: #f9fafb;
   padding: 1rem;
   flex-direction: column;
 }
@@ -182,6 +181,18 @@ footer {
   margin-right: 25px;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading Styles */
+.section-heading {
+  color: #101518;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  padding: 5rem 3rem 0.7rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .news-scroll-container {
