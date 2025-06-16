@@ -2,23 +2,9 @@
 
 /* Hero Section Background */
 .hero-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://chari-u.com/img/top/main01.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* News Item Background 1 */
-.news-item-1 {
-  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP01kVTIx0FT5NDaqXzWunxsqWyDW3imR-vqUxC3Sswm1vodpisctQ8yY7MnlZSsU6eAim9uNPtgw5QbjViQPZMqU00NKQ1FbzWun_BwbMufc9_bY3kba0k2Frcm_DHsDKlxIyeuulfDvXLx05rbWeH6Mzzn4fVtLXkhLudi8CrVfUk8cCoIOb09QHI2zvmm2k3vGrrcdrOb_rKRJaaHe5_mU-EzA2xU7r97f2G0Q7shcEVyc83wD-eyl14wD2u1e6U9wRjc2O5SEB");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* News Item Background 2 */
-.news-item-2 {
-  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOVsSwbAQD9weGI7TzW0Ft6SmfrAi94fdXYFK7Nma-sHYsEwdXRZWt2xWKTE1vLLi_k8Ics_0rvvvZ216k0-ipUSFiwl8AnajmwuW0oIslq2Z8QIVTFh9XcbOD5d1zTpFriGABDemzYuaV06x32z5cu6FFBHNSlUCXE2I4rlm1gViWt1zAVblfcxGgDQZ4XX3VvfKNVC_YEJGJcp3-2WL2fph9DlVxM58frDH2vsPQ5nlKngj9EHY2azO4-REXSONdgGoQUguMAT4q");
+  background-image: url("https://chari-u.com/img/top/main01.jpg");
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: screen;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
