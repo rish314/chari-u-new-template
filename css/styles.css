@@ -1,5 +1,27 @@
 /* Main Styles for Chari-U Website */
 
+/* Sale Banner */
+.sale-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.sale-banner::before {
+  content: "SALE";
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  background-color: red;
+  color: white;
+  padding: 5px 40px;
+  font-weight: bold;
+  font-size: 16px;
+  transform: rotate(45deg);
+  z-index: 1;
+  width: 150px;
+  text-align: center;
+}
+
 /* Hero Section Background */
 .hero-background {
   background-image: url("https://chari-u.com/img/top/main01.jpg");
