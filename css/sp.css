@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+    /* Header and Navigation */
+    header {
+        padding: 12px !important;
+    }
+
+    #logo img {
+        max-width: 150px;
+    }
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    /* Show mobile nav when active */
+    .mobile-nav.active {
+        display: flex;
+    }
+
+    /* Layout adjustments */
+    .layout-content-container {
+        padding: 0 1rem;
+    }
+
+    /* Section headings */
+    .section-heading {
+        font-size: 28px;
+        padding: 3rem 1rem 0.7rem;
+    }
+
+    /* Grid adjustments */
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

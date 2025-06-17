@@ -20,9 +20,12 @@
     <meta property="og:url" content="https://chari-u.com" />
     <meta property="og:site_name" content="愛知　名古屋近郊　じてんしゃひろば遊"/>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,"/>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sp.css">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body>
@@ -31,21 +34,20 @@
         <!-- メニュー -->
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#eaeef1] px-10 py-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] fixed top-0 left-0 w-full bg-white z-10">
             <div id="logo">
-                <a href="http://chari-u.com/">
+                <a href="https://chari-u.com/">
                     <img src="https://chari-u.com/header/rogo.png" alt="じてんしゃひろば遊" />
                 </a>
             </div>
-            <div class="flex flex-1 justify-end gap-8">
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav flex flex-1 justify-end gap-8">
                 <div class="flex items-center gap-9">
                     <a class="text-[#101518] text-sm font-medium leading-normal" href="#news">ちょこっとニュース</a>
                     <a class="text-[#101518] text-sm font-medium leading-normal" href="#bicycles">自転車を探す</a>
                     <a class="text-[#101518] text-sm font-medium leading-normal" href="#services">いろいろサービス</a>
                     <a class="text-[#101518] text-sm font-medium leading-normal" href="#store">店舗案内</a>
                     <!-- お問い合わせ -->
-                    <button
-                            class="group contact-button"
-                    >
-                        <a class="text-white text-sm font-medium font-bold leading-normal flex items-center" href="/contact.html">
+                    <button class="group contact-button">
+                        <a class="text-white text-sm font-medium font-bold leading-normal flex items-center" href="https://chari-u.com/contact.html">
                             <svg class="w-4 h-4 mr-1 transition-transform duration-300 ease-in-out group-hover:rotate-12 group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
@@ -54,7 +56,32 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
         </header>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#news">ちょこっとニュース</a>
+            <a href="#bicycles">自転車を探す</a>
+            <a href="#services">いろいろサービス</a>
+            <a href="#store">店舗案内</a>
+            <button class="group contact-button">
+                <a class="text-white text-sm font-medium font-bold leading-normal flex items-center justify-center" href="/contact.html">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    お問い合わせ
+                </a>
+            </button>
+        </div>
         <!-- Spacer to prevent content from being hidden behind fixed header -->
         <div class="h-[60px]"></div>
 
@@ -66,8 +93,8 @@
             </div>
         </div>
 
-        <div class="px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1">
 
                 <!--  ちょこっとニュース -->
                 <h2 id="news" class="section-heading">
@@ -168,7 +195,7 @@
                     <div>
 
                         <!-- 自転車カテゴリー -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3">
+                        <div class="grid grid-cols-1 gap-3">
                             <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9] max-h-[300px]">
                                 <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">ロードレーサー</h3>
                                 <p class="text-[#5c778a] text-sm font-normal leading-normal">
@@ -213,7 +240,7 @@
                 <h2 id="services" class="section-heading">
                     いろいろサービス
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
+                <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-3 p-4">
                     <div class="service-card">
                         <div class="text-[#101518]" data-icon="Wrench" data-size="24px" data-weight="regular">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
@@ -304,26 +331,26 @@
             </div>
         </div>
 
-        <div class="px-40 flex flex-1 justify-center">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
+            <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1">
                 <h2 id="store" class="section-heading">
                     店舗案内
                 </h2>
-                <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
-                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
-                        <p class="text-[#5c778a] text-sm font-normal leading-normal">住所</p>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-[20%_1fr] gap-x-6">
+                    <div class="col-span-1 md:col-span-2 grid md:grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
+                        <p class="text-[#5c778a] text-sm font-medium mb-2 md:mb-0">住所</p>
                         <p class="text-[#101518] text-sm font-normal leading-normal"><a href="https://chari-u.com/tenpoannnai.htm">愛知県小牧市郷中 1丁目197</a>（駐車場8台）</p>
                     </div>
-                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
-                        <p class="text-[#5c778a] text-sm font-normal leading-normal">営業時間</p>
+                    <div class="col-span-1 md:col-span-2 grid md:grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
+                        <p class="text-[#5c778a] text-sm font-medium mb-2 md:mb-0">営業時間</p>
                         <p class="text-[#101518] text-sm font-normal leading-normal">10:30 - 19:30</p>
                     </div>
-                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
-                        <p class="text-[#5c778a] text-sm font-normal leading-normal">定休日</p>
+                    <div class="col-span-1 md:col-span-2 grid md:grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
+                        <p class="text-[#5c778a] text-sm font-medium mb-2 md:mb-0">定休日</p>
                         <p class="text-[#101518] text-sm font-normal leading-normal">水曜日・木曜日（電話もダメです。祝日の場合、ハリキッて営業）</p>
                     </div>
-                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
-                        <p class="text-[#5c778a] text-sm font-normal leading-normal">連絡先</p>
+                    <div class="col-span-1 md:col-span-2 grid md:grid-cols-subgrid border-t border-t-[#d4dde2] py-5">
+                        <p class="text-[#5c778a] text-sm font-medium mb-2 md:mb-0">連絡先</p>
                         <p class="text-[#101518] text-sm font-normal leading-normal">
                             電話: (0568) 75-5802<br>
                             FAX: (0568) 71-0415<br>
@@ -335,9 +362,9 @@
         </div>
 
         <!-- フッター -->
-        <footer class="bg-[#e53768] text-white py-12 mt-10">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer class="bg-[#e53768] text-white py-8 md:py-12 mt-10">
+            <div class="container mx-auto px-4 md:px-6 lg:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     <!-- ロゴと説明 -->
                     <div class="md:col-span-1">
                         <h3 class="text-lg font-semibold mb-4">じてんしゃひろば 遊</h3>
@@ -424,5 +451,20 @@
         </footer>
     </div>
 </div>
+
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+    function toggleMobileMenu() {
+        const mobileNav = document.getElementById('mobileNav');
+        mobileNav.classList.toggle('active');
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('mobileNav').classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
