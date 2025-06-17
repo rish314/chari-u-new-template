@@ -165,17 +165,17 @@ header {
 
 .diary-button {
   display: flex;
-  min-width: 120px;
+  min-width: 100px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-radius: 9999px;
-  height: 3rem;
-  padding: 0 1.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
   background-color: #e53768;
   color: white;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.015em;
