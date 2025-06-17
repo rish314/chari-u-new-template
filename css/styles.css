@@ -3,6 +3,7 @@
 /* Smooth Scrolling */
 * {
   scroll-behavior: smooth;
+  scroll-padding-top: 12px; /* Adjust this value based on your header height */
 }
 
 /* Sale Banner */
