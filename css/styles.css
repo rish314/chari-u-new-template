@@ -1,9 +1,8 @@
 /* Main Styles for Chari-U Website */
 
 /* Smooth Scrolling */
-html {
+* {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Adjust this value based on your header height */
 }
 
 /* Sale Banner */
