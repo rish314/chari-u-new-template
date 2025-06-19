@@ -197,49 +197,101 @@
 
 
                 <h2 id="bicycles" class="section-heading">自転車を探す</h2>
-                <!-- 強調された自転車販売セクション -->
-                <div class="lg:p-4">
-                    <div>
-
-                        <!-- 自転車カテゴリー -->
-                        <div class="grid grid-cols-1 gap-3">
-                            <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9] max-h-[300px]">
-                                <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">ロードレーサー</h3>
-                                <p class="text-[#5c778a] text-sm font-normal leading-normal">
-                                    街乗り、フィットネス、自転車通勤からレースまで
-                                </p>
+                <!-- 自転車カテゴリー -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <!-- ロードレーサー -->
+                    <a href="bicycles-road.html" class="block">
+                        <div class="bg-white rounded-lg p-6 border border-[#d4dde2] hover:bg-[#e6f0f9] transition-all duration-300 h-full">
+                            <div class="flex items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
+                                    <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
+                                </svg>
+                                <h3 class="text-[#101518] text-xl font-bold leading-tight">ロードレーサー</h3>
                             </div>
-                            <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9]">
-                                <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">MTB</h3>
-                                <p class="text-[#5c778a] text-sm font-normal leading-normal">
-                                    街乗り、山遊び、自転車通勤からレースまで
-                                </p>
-                            </div>
-                            <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9]">
-                                <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">クロスバイク</h3>
-                                <p class="text-[#5c778a] text-sm font-normal leading-normal">
-                                    クロスバイクに、フラットバーロード、街乗り自転車などなど…<br>
-                                    自転車通勤、快適、丈夫、歩道の段差もへっちゃら
-                                </p>
-                            </div>
-                            <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9] max-h-[300px]">
-                                <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">折りたたみ自転車 ＆小径車（ミニベロ）</h3>
-                                <p class="text-[#5c778a] text-sm font-normal leading-normal">
-                                    実は得意　常時50台-100台あり<br>
-                                    小さく畳んで、どこでもあなたのお供に
-                                </p>
-                            </div>
-
-                            <div class="bg-white rounded-lg p-4 border border-[#d4dde2] hover:bg-[#e6f0f9] sale-banner mt-8">
-                                <h3 class="text-[#101518] text-base font-bold leading-tight mb-3">涙のたたき売り</h3>
-                                <p class="text-[#5c778a] text-sm font-normal leading-normal">
-                                    足の踏み場を作りたいセールです。<br>
-                                    目玉・・"見つかるか宝の山！？"編です。
-                                </p>
+                            <p class="text-[#5c778a] text-sm font-normal leading-normal mb-4">
+                                街乗り、フィットネス、自転車通勤からレースまで
+                            </p>
+                            <div class="flex justify-end">
+                                <span class="text-[#4aaa8d] text-sm font-medium">詳細を見る →</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- MTB -->
+                    <a href="bicycles-mtb.html" class="block">
+                        <div class="bg-white rounded-lg p-6 border border-[#d4dde2] hover:bg-[#e6f0f9] transition-all duration-300 h-full">
+                            <div class="flex items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
+                                    <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
+                                </svg>
+                                <h3 class="text-[#101518] text-xl font-bold leading-tight">MTB</h3>
+                            </div>
+                            <p class="text-[#5c778a] text-sm font-normal leading-normal mb-4">
+                                街乗り、山遊び、自転車通勤からレースまで
+                            </p>
+                            <div class="flex justify-end">
+                                <span class="text-[#4aaa8d] text-sm font-medium">詳細を見る →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- クロスバイク -->
+                    <a href="bicycles-cross.html" class="block">
+                        <div class="bg-white rounded-lg p-6 border border-[#d4dde2] hover:bg-[#e6f0f9] transition-all duration-300 h-full">
+                            <div class="flex items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
+                                    <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
+                                </svg>
+                                <h3 class="text-[#101518] text-xl font-bold leading-tight">クロスバイク＆街乗りBike</h3>
+                            </div>
+                            <p class="text-[#5c778a] text-sm font-normal leading-normal mb-4">
+                                クロスバイク、フラットバーロード、街乗り自転車などなど…<br>
+                                自転車通勤、快適、丈夫、歩道の段差もへっちゃら
+                            </p>
+                            <div class="flex justify-end">
+                                <span class="text-[#4aaa8d] text-sm font-medium">詳細を見る →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 折りたたみ自転車 ＆小径車（ミニベロ） -->
+                    <a href="bicycles-folding.html" class="block">
+                        <div class="bg-white rounded-lg p-6 border border-[#d4dde2] hover:bg-[#e6f0f9] transition-all duration-300 h-full">
+                            <div class="flex items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
+                                    <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
+                                </svg>
+                                <h3 class="text-[#101518] text-xl font-bold leading-tight">折りたたみ自転車 ＆小径車（ミニベロ）</h3>
+                            </div>
+                            <p class="text-[#5c778a] text-sm font-normal leading-normal mb-4">
+                                実は得意　常時50台-100台あり<br>
+                                小さく畳んで、どこでもあなたのお供に
+                            </p>
+                            <div class="flex justify-end">
+                                <span class="text-[#4aaa8d] text-sm font-medium">詳細を見る →</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+
+                <!-- 涙のたたき売り -->
+                <a href="https://chari-u.com/subtataki.htm" class="block mb-12">
+                    <div class="bg-white rounded-lg p-6 border border-[#d4dde2] hover:bg-[#e6f0f9] transition-all duration-300 sale-banner">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#e53768" viewBox="0 0 256 256" class="mr-3">
+                                <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
+                            </svg>
+                            <h3 class="text-[#101518] text-xl font-bold leading-tight">涙のたたき売り</h3>
+                        </div>
+                        <p class="text-[#5c778a] text-sm font-normal leading-normal mb-4">
+                            足の踏み場を作りたいセールです。<br>
+                            目玉・・"見つかるか宝の山！？"編です。
+                        </p>
+                        <div class="flex justify-end">
+                            <span class="text-[#e53768] text-sm font-medium">詳細を見る →</span>
+                        </div>
+                    </div>
+                </a>
 
                 <!-- その他のサービス -->
                 <h2 id="services" class="section-heading">
