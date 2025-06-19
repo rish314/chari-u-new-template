@@ -211,44 +211,9 @@
 </div>
 
 <!-- JavaScript for Mobile Menu Toggle -->
-<script>
-    function toggleMobileMenu() {
-        const mobileNav = document.getElementById('mobileNav');
-        const hamburgerIcon = document.getElementById('hamburgerIcon');
-        const closeIcon = document.getElementById('closeIcon');
-
-        // Toggle the mobile nav active class
-        mobileNav.classList.toggle('active');
-
-        // Toggle between hamburger and close icons
-        if (mobileNav.classList.contains('active')) {
-            // Menu is open, show close icon
-            hamburgerIcon.style.display = 'none';
-            closeIcon.style.display = 'block';
-        } else {
-            // Menu is closed, show hamburger icon
-            hamburgerIcon.style.display = 'block';
-            closeIcon.style.display = 'none';
-        }
-    }
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.mobile-nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            const mobileNav = document.getElementById('mobileNav');
-            const hamburgerIcon = document.getElementById('hamburgerIcon');
-            const closeIcon = document.getElementById('closeIcon');
-
-            mobileNav.classList.remove('active');
-
-            // Reset to hamburger icon
-            hamburgerIcon.style.display = 'block';
-            closeIcon.style.display = 'none';
-        });
-    });
-</script>
+<!-- 削除: インラインのtoggleMobileMenu関数とリンククリック時の処理 -->
 
 <!-- Load components script -->
-<script src="js/components.js"></script>
+<script src="js/mobile_menu.js"></script>
 </body>
 </html>
