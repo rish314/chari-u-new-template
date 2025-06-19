@@ -1,4 +1,10 @@
 @media (max-width: 767px) {
+    * {
+        scroll-behavior: smooth;
+        scroll-padding-top: 18px; /* Adjust this value based on your header height */
+        box-sizing: border-box;
+    }
+
     /* Header and Navigation */
     header {
         padding: 12px !important;

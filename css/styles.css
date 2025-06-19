@@ -52,44 +52,7 @@ img {
   width: 100%;
 }
 
-/* Sale Banner */
-.sale-banner {
-  position: relative;
-  overflow: hidden;
-}
 
-.sale-banner::before {
-  content: "SALE";
-  position: absolute;
-  top: 10px;
-  right: -40px;
-  background-color: red;
-  color: white;
-  padding: 5px 40px;
-  font-weight: bold;
-  font-size: 16px;
-  transform: rotate(45deg);
-  z-index: 1;
-  width: 150px;
-  text-align: center;
-}
-
-/* Hero Section Background */
-.hero-background {
-  background-image: url("https://chari-u.com/img/top/main01.jpg");
-  background-color: rgba(255, 255, 255, 0.3);
-  background-blend-mode: screen;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Business Diary Section Background */
-.business-diary-bg {
-  background-image: linear-gradient(to right, rgba(50, 130, 100, 0.9), rgba(144, 238, 144, 0.7)), url("https://chari-u.com/img/top/main06.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
 
 /* Layout Styles */
 .layout-container {
