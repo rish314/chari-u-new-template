@@ -59,7 +59,6 @@ img {
   height: 100%;
   flex-grow: 1;
   flex-direction: column;
-  margin-top: 63px;
 }
 
 .layout-content-container {
