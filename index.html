@@ -380,5 +380,36 @@
 <!-- Load components script -->
 <script src="js/header.js"></script>
 <script src="js/footer_component.js"></script>
+<script>
+// ちょこっとニュース自動スクロール
+(function() {
+    const container = document.querySelector('.news-scroll-container');
+    if (!container) return;
+    const items = container.querySelectorAll('.news-item-container');
+    if (items.length < 2) return;
+
+    let currentIndex = 0;
+    const itemWidth = items[0].offsetWidth;
+    const scrollPause = 2200; // 停止時間(ms)
+    const scrollDuration = 600; // スクロールアニメーション時間(ms)
+
+    function scrollToIndex(index) {
+        container.scrollTo({
+            left: itemWidth * index,
+            behavior: 'smooth'
+        });
+    }
+
+    function autoScroll() {
+        currentIndex = (currentIndex + 1) % items.length;
+        scrollToIndex(currentIndex);
+        setTimeout(autoScroll, scrollPause + scrollDuration);
+    }
+
+    // 初期位置
+    scrollToIndex(0);
+    setTimeout(autoScroll, scrollPause);
+})();
+</script>
 </body>
 </html>
