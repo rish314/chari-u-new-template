@@ -1,200 +1,214 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-    <link
-            rel="stylesheet"
-            as="style"
-            onload="this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
 
     <title>じてんしゃひろば遊</title>
 
-    <meta name="Keywords" content="自転車,愛知,名古屋,岐阜,自転車屋,ショップ,zitennsya,ロードバイク,マウンテンバイク,ミニベロ,折りたたみ自転車,クロスバイク"/>
-    <meta name="description" content="自転車　愛知 名古屋近郊の自転車店。いろいろな自転車　ロードバイク、MTB、クロスバイク、ミニベロ、折りたたみ自転車の販売と店舗案内"/>
+    <meta name="Keywords" content="自転車,愛知,名古屋,岐阜,自転車屋,ショップ,zitennsya,ロードバイク,マウンテンバイク,ミニベロ,折りたたみ自転車,クロスバイク" />
+    <meta name="description" content="自転車　愛知 名古屋近郊の自転車店。いろいろな自転車　ロードバイク、MTB、クロスバイク、ミニベロ、折りたたみ自転車の販売と店舗案内" />
 
-    <meta property="og:title" content="じてんしゃひろば遊"/>
-    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="じてんしゃひろば遊" />
+    <meta property="og:type" content="website" />
     <meta property="og:description" content="愛知 名古屋近郊の自転車店。いろいろな自転車　ロードバイク、MTB、クロスバイク、ミニベロ、折りたたみ自転車の販売と店舗案内" />
     <meta property="og:url" content="https://chari-u.com" />
-    <meta property="og:site_name" content="愛知　名古屋近郊　じてんしゃひろば遊"/>
+    <meta property="og:site_name" content="愛知　名古屋近郊　じてんしゃひろば遊" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,"/>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sp.css">
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Load components script -->
+    <script src="js/header.js"></script>
+    <script src="js/footer_component.js"></script>    
 </head>
+
 <body>
-<div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
-    <div class="layout-container flex h-full grow flex-col">
-        <!-- メニュー -->
-        <header-component></header-component>
-        <!-- Spacer to prevent content from being hidden behind fixed header -->
-        <div class="h-[60px]"></div>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- メニュー -->
+            <header-component></header-component>
+            <!-- Spacer to prevent content from being hidden behind fixed header -->
+            <div class="h-[60px]"></div>
 
-        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1 mt-12">
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1 mt-12">
 
-                <!-- じてんしゃロードレーサー -->
-                <div id="road" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
-                    <h2 class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
-                            <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
-                        </svg>
-                        じてんしゃロードレーサー 編
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- 左側のメーカー -->
-                        <div class="space-y-6">
-                            <ol class="bike-makers">
-                                <li><a href="subwilierroad.html">WILIER（ウィリエール） 2025年</a></li>
-                                <li><a href="subridley.html">RIDLEY 2025年</a></li>
-                                <li><a href="suanchorroad02.htm">ANCHOR アンカー 2025年</a></li>
-                                <li><a href="merida/submeridaroad.html">MERIDA （メリダ） 2025年</a></li>
-                                <li><a href="subgios.htm">GIOS ジオス 2025年</a></li>
-                                <li><a href="jamisroad/sub_jamis_road12.htm">JAMIS ジェイミス</a></li>
-                                <li><a href="sub_focus.html">FOCUS</a></li>
-                                <li><a href="breezer/subbreezer.html">BREEZER</a></li>
-                                <li>BOMTRACK</li>
-                            </ol>
+                    <!-- じてんしゃロードレーサー -->
+                    <div id="road" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
+                        <h2
+                            class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d"
+                                viewBox="0 0 256 256" class="mr-3">
+                                <path
+                                    d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z">
+                                </path>
+                            </svg>
+                            じてんしゃロードレーサー 編
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- 左側のメーカー -->
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="subwilierroad.html">WILIER（ウィリエール） 2025年</a></li>
+                                    <li><a href="subridley.html">RIDLEY 2025年</a></li>
+                                    <li><a href="suanchorroad02.htm">ANCHOR アンカー 2025年</a></li>
+                                    <li><a href="merida/submeridaroad.html">MERIDA （メリダ） 2025年</a></li>
+                                    <li><a href="subgios.htm">GIOS ジオス 2025年</a></li>
+                                    <li><a href="jamisroad/sub_jamis_road12.htm">JAMIS ジェイミス</a></li>
+                                    <li><a href="sub_focus.html">FOCUS</a></li>
+                                    <li><a href="breezer/subbreezer.html">BREEZER</a></li>
+                                    <li>BOMTRACK</li>
+                                </ol>
+                            </div>
+                            <!-- 右側のメーカー -->
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="subscottroad03.htm">SCOTT スコット 2025年</a></li>
+                                    <li><a href="subbmc.html">BMC （ビーエムシー） 2025年</a></li>
+                                    <li><a href="subbianchiroad.htm">Bianchi ビアンキ 2025年</a></li>
+                                    <li><a href="subcolnago.htm">COLNAGO コルナゴ</a></li>
+                                    <li><a href="subroad.htm">RALEIGH ラレー</a></li>
+                                    <li><a href="sub_corratec.html">CORRATEC コラテック 2025年</a></li>
+                                    <li><a href="fuji/subfujiroad.htm">FUJI ロード 2025年</a>
+                                        <p>JARIやドロップハンドルタイプ</p>
+                                    </li>
+                                    <li>パナソニック（オーダーシステム POSできます）</li>
+                                    <li>サーベロできます
+                                        <p>FELT</p>
+                                    </li>
+                                    <li>カレラ チネリ TIME
+                                        <p>店頭にてちょっと並んでます</p>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <!-- 右側のメーカー -->
-                        <div class="space-y-6">
-                            <ol class="bike-makers">
-                                <li><a href="subscottroad03.htm">SCOTT スコット 2025年</a></li>
-                                <li><a href="subbmc.html">BMC （ビーエムシー） 2025年</a></li>
-                                <li><a href="subbianchiroad.htm">Bianchi ビアンキ 2025年</a></li>
-                                <li><a href="subcolnago.htm">COLNAGO コルナゴ</a></li>
-                                <li><a href="subroad.htm">RALEIGH ラレー</a></li>
-                                <li><a href="sub_corratec.html">CORRATEC コラテック 2025年</a></li>
-                                <li><a href="fuji/subfujiroad.htm">FUJI ロード 2025年</a>
-                                    <p>JARIやドロップハンドルタイプ</p>
-                                </li>
-                                <li>パナソニック（オーダーシステム POSできます）</li>
-                                <li>サーベロできます
-                                    <p>FELT</p>
-                                </li>
-                                <li>カレラ チネリ TIME
-                                    <p>店頭にてちょっと並んでます</p>
-                                </li>
-                            </ol>
+                    </div>
+                    <!-- / じてんしゃロードレーサー -->
+
+                    <!-- MTB -->
+                    <div id="mtb" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
+                        <h2
+                            class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d"
+                                viewBox="0 0 256 256" class="mr-3">
+                                <path
+                                    d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z">
+                                </path>
+                            </svg>
+                            じてんしゃMTB 編
+                        </h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- 左側のメーカー -->
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="subkona02.htm">KONAコナ 2025年モデル</a></li>
+                                    <li><a href="subscott_02.htm">SCOTTスコット 2025年</a></li>
+                                    <li><a href="subrocky.html">ROCKY MOUNTAIN</a></li>
+                                    <li><a href="merida/submeridamtb.html">MERIDA（メリダ） 2025年</a></li>
+                                    <li><a href="gt/subgt_mtb12.htm">GT（ジーティー） 2025年</a></li>
+                                    <li>GIANTジャイアント</li>
+                                    <li><a href="jamismtb/sub_jamis_mtb12.htm">JAMISジェイミスMTB</a></li>
+                                    <li>他 年式がないブランドもあり</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <!-- / じてんしゃロードレーサー -->
+                    <!-- / MTB -->
 
-            <!-- MTB -->
-            <div id="mtb" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
-                <h2 class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
-                        <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
-                    </svg>
-                    じてんしゃMTB 編
-                </h2>
+                    <!-- クロスバイク＆街乗りBike -->
+                    <div id="cross" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
+                        <h2
+                            class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d"
+                                viewBox="0 0 256 256" class="mr-3">
+                                <path
+                                    d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z">
+                                </path>
+                            </svg>
+                            クロスバイク＆街乗りBike 編
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="suanchor_crossbike.html">ANCHOR（アンカー） 2025年</a></li>
+                                    <li><a href="fuji/subfujicross.htm">FUJIクロスバイク 2025年</a></li>
+                                    <li><a href="subscottcr.html">SCOTTクロスバイク 2025年</a></li>
+                                    <li><a href="breezer/subbreezer.html">BREEZER 2025年</a></li>
+                                    <li><a href="subkonacross.html">KONA クロスバイク 2025年</a></li>
+                                    <li><a href="subraleighcr.html">ラレークロスバイク 2025年</a></li>
+                                </ol>
+                            </div>
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="subgioscross.html">GIOSクロスバイク 2025年</a></li>
+                                    <li><a href="jamis_cross/sub_jamis_cross.htm">JAMIS クロスバイク 2025年</a></li>
+                                    <li><a href="merida/submeridacross.html">MERIDA（メリダ） 2025年</a></li>
+                                    <li><a href="subgiant_cross.html">GIANTクロスバイク 2025年</a></li>
+                                    <li>narifuri（ナリフリ）のcharifuri（チャリフリ） CF02 展示あり</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / クロスバイク＆街乗りBike -->
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- 左側のメーカー -->
-                    <div class="space-y-6">
-                        <ol class="bike-makers">
-                            <li><a href="subkona02.htm">KONAコナ 2025年モデル</a></li>
-                            <li><a href="subscott_02.htm">SCOTTスコット 2025年</a></li>
-                            <li><a href="subrocky.html">ROCKY MOUNTAIN</a></li>
-                            <li><a href="merida/submeridamtb.html">MERIDA（メリダ） 2025年</a></li>
-                            <li><a href="gt/subgt_mtb12.htm">GT（ジーティー） 2025年</a></li>
-                            <li>GIANTジャイアント</li>
-                            <li><a href="jamismtb/sub_jamis_mtb12.htm">JAMISジェイミスMTB</a></li>
-                            <li>他 年式がないブランドもあり</li>
-                        </ol>
+                    <!-- 折りたたみ自転車＆ミニベロ -->
+                    <div id="folding" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
+                        <h2
+                            class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d"
+                                viewBox="0 0 256 256" class="mr-3">
+                                <path
+                                    d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z">
+                                </path>
+                            </svg>
+                            折りたたみ自転車＆ミニベロ 編
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li><a href="oritatami/subbd1.htm">birdy ｒ＆ｍ（バーディ）</a> ほぼ全モデル展示あり</li>
+                                    <li><a href="reach/1reach.html">REACH（リーチ）</a></li>
+                                    <li><a href="oritatami/subbrrompton.html">BROMPTON ブロンプトン</a></li>
+                                    <li><a href="oritatami/sub_kolibri.html">KOLiBRI（コリブリ）</a></li>
+                                    <li><a href="oritatami/subdahon.html">DAHON ダホン</a></li>
+                                    <li><a href="oritatami/subtern.html">tern （ターン）</a></li>
+                                    <li>KHS</li>
+                                    <li><a href="oritatami/subgiosmini.html">GIOS ジオス 2025年</a></li>
+                                    <li><a href="oritatami/subraleighmini.html">RALEIGH ラレー</a></li>
+                                </ol>
+                            </div>
+                            <div class="space-y-6">
+                                <ol class="bike-makers">
+                                    <li>CARACLE（カラクル）</li>
+                                    <li><a href="oritatami/subgiantmini.html">GIANT</a></li>
+                                    <li><a href="fuji/subfujimini.htm">FUJI 小径車 2025年</a></li>
+                                    <li>TYRELL タイレル</li>
+                                    <li><a href="carryme/subcarryme.html">CARRYME キャリーミー</a></li>
+                                    <li>IF MOVE</li>
+                                    <li><a href="oritatami/subtartarugamini.html">タルタルーガ</a></li>
+                                    <li>BRUNO</li>
+                                    <li>ステインサイクルズ</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- / MTB -->
+                    <!-- / 折りたたみ自転車＆ミニベロ -->
 
-            <!-- クロスバイク＆街乗りBike -->
-            <div id="cross" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
-                <h2 class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
-                        <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
-                    </svg>
-                    クロスバイク＆街乗りBike 編
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-6">
-                        <ol class="bike-makers">
-                            <li><a href="suanchor_crossbike.html">ANCHOR（アンカー） 2025年</a></li>
-                            <li><a href="fuji/subfujicross.htm">FUJIクロスバイク 2025年</a></li>
-                            <li><a href="subscottcr.html">SCOTTクロスバイク 2025年</a></li>
-                            <li><a href="breezer/subbreezer.html">BREEZER 2025年</a></li>
-                            <li><a href="subkonacross.html">KONA クロスバイク 2025年</a></li>
-                            <li><a href="subraleighcr.html">ラレークロスバイク 2025年</a></li>
-                        </ol>
-                    </div>
-                    <div class="space-y-6">
-                        <ol class="bike-makers">
-                            <li><a href="subgioscross.html">GIOSクロスバイク 2025年</a></li>
-                            <li><a href="jamis_cross/sub_jamis_cross.htm">JAMIS クロスバイク 2025年</a></li>
-                            <li><a href="merida/submeridacross.html">MERIDA（メリダ） 2025年</a></li>
-                            <li><a href="subgiant_cross.html">GIANTクロスバイク 2025年</a></li>
-                            <li>narifuri（ナリフリ）のcharifuri（チャリフリ） CF02 展示あり</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <!-- / クロスバイク＆街乗りBike -->
-
-            <!-- 折りたたみ自転車＆ミニベロ -->
-            <div id="folding" class="bg-white rounded-lg p-6 border border-[#d4dde2] mb-8">
-                <h2 class="flex items-center text-[#101518] text-2xl font-bold mb-6 border-b border-[#d4dde2] pb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#4aaa8d" viewBox="0 0 256 256" class="mr-3">
-                        <path d="M208,112a47.81,47.81,0,0,0-16.93,3.09L165.93,72H192a8,8,0,0,1,8,8,8,8,0,0,0,16,0,24,24,0,0,0-24-24H152a8,8,0,0,0-6.91,12l11.65,20H99.26L82.91,60A8,8,0,0,0,76,56H48a8,8,0,0,0,0,16H71.41L85.12,95.51,69.41,117.06a48.13,48.13,0,1,0,12.92,9.44l11.59-15.9L125.09,164A8,8,0,1,0,138.91,156l-30.32-52h57.48l11.19,19.17A48,48,0,1,0,208,112ZM80,160a32,32,0,1,1-20.21-29.74l-18.25,25a8,8,0,1,0,12.92,9.42l18.25-25A31.88,31.88,0,0,1,80,160Zm128,32a32,32,0,0,1-22.51-54.72L201.09,164A8,8,0,1,0,214.91,156L199.3,129.21A32,32,0,1,1,208,192Z"></path>
-                    </svg>
-                    折りたたみ自転車＆ミニベロ 編
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-6">
-                        <ol class="bike-makers">
-                            <li><a href="oritatami/subbd1.htm">birdy ｒ＆ｍ（バーディ）</a> ほぼ全モデル展示あり</li>
-                            <li><a href="reach/1reach.html">REACH（リーチ）</a></li>
-                            <li><a href="oritatami/subbrrompton.html">BROMPTON ブロンプトン</a></li>
-                            <li><a href="oritatami/sub_kolibri.html">KOLiBRI（コリブリ）</a></li>
-                            <li><a href="oritatami/subdahon.html">DAHON ダホン</a></li>
-                            <li><a href="oritatami/subtern.html">tern （ターン）</a></li>
-                            <li>KHS</li>
-                            <li><a href="oritatami/subgiosmini.html">GIOS ジオス 2025年</a></li>
-                            <li><a href="oritatami/subraleighmini.html">RALEIGH ラレー</a></li>
-                        </ol>
-                    </div>
-                    <div class="space-y-6">
-                        <ol class="bike-makers">
-                            <li>CARACLE（カラクル）</li>
-                            <li><a href="oritatami/subgiantmini.html">GIANT</a></li>
-                            <li><a href="fuji/subfujimini.htm">FUJI 小径車 2025年</a></li>
-                            <li>TYRELL タイレル</li>
-                            <li><a href="carryme/subcarryme.html">CARRYME キャリーミー</a></li>
-                            <li>IF MOVE</li>
-                            <li><a href="oritatami/subtartarugamini.html">タルタルーガ</a></li>
-                            <li>BRUNO</li>
-                            <li>ステインサイクルズ</li>
-                        </ol>
-                    </div>
                 </div>
             </div>
-            <!-- / 折りたたみ自転車＆ミニベロ -->
-
+            <!-- フッター -->
+            <footer-component></footer-component>
+        </div>
     </div>
-</div>
-        <!-- フッター -->
-        <footer-component></footer-component>
-    </div>
-</div>
-
-<!-- Load components script -->
-<script src="js/header.js"></script>
-<script src="js/footer_component.js"></script>
 </body>
+
 </html>
