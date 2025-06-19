@@ -192,3 +192,9 @@ footer {
   margin-bottom: 1rem;
 }
 
+ol.bike-makers {
+  list-style-image: url('https://chari-u.com/top/top_bullet2-btn.png');
+}
+ol.bike-makers li {
+  margin: 2rem;
+}
