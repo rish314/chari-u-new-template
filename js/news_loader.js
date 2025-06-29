@@ -30,7 +30,7 @@ class NewsLoader {
         this.newsItems = Array.from(tdElements)
             .map(td => this.extractTextContent(td))
             .filter(text => text.trim().length > 0)
-            .slice(0, 10); // 最大10件まで
+            .slice(0, 20); // 最大10件まで
     }
 
     extractTextContent(element) {
@@ -102,7 +102,7 @@ class NewsLoader {
         if (items.length < 2) return;
 
         let currentIndex = 0;
-        const itemWidth = items[0].offsetWidth;
+        const itemWidth = 350;
         const scrollPause = 2200; // 停止時間(ms)
         const scrollDuration = 600; // スクロールアニメーション時間(ms)
 
