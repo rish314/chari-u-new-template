@@ -149,7 +149,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
   margin-bottom: 5px;
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   overflow-y: scroll;
 }
 

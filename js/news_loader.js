@@ -102,7 +102,7 @@ class NewsLoader {
         if (items.length < 2) return;
 
         let currentIndex = 0;
-        const itemWidth = 350;
+        const itemWidth = 345;
         const scrollPause = 2200; // 停止時間(ms)
         const scrollDuration = 600; // スクロールアニメーション時間(ms)
 
