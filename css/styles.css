@@ -1,9 +1,9 @@
 /* Main Styles for Chari-U Website */
 
 /* Smooth Scrolling and Base Responsive Setup */
-* {
+html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 12px; /* Adjust this value based on your header height */
+  scroll-padding-top: 70px; /* Adjust this value based on your header height */
   box-sizing: border-box;
 }
 
