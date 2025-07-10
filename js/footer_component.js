@@ -28,7 +28,7 @@ class FooterComponent extends HTMLElement {
             this.innerHTML = `
                 <footer class="bg-[#e53768] text-white py-8 md:py-12 mt-10">
                     <div class="container mx-auto px-4">
-                        <p class="text-white text-sm text-center">© 2023 K-yuuki. All rights reserved.</p>
+                        <p class="text-white text-sm text-center">© 2023 K-yuuki.</p>
                     </div>
                 </footer>
             `;
