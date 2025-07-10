@@ -184,7 +184,8 @@ footer {
 /* Section Heading Styles */
 .section-heading {
   color: #101518;
-  font-size: 36px;
+  font-family: 'Rampart One', cursive;
+  font-size: 42px;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: -0.015em;
