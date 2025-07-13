@@ -123,6 +123,7 @@ footer {
   border: 1px solid #d4dde2;
   padding: 1rem;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .service-card:hover {
