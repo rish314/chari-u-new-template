@@ -80,6 +80,15 @@
     transition: transform 0.3s ease-in-out;
 }
 
+/* Allow Tailwind classes to override diary-button background and text color */
+.diary-button.bg-white {
+    background-color: white !important;
+}
+
+.diary-button .text-\[#e53768\] {
+    color: #e53768 !important;
+}
+
 .diary-button:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
