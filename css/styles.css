@@ -118,7 +118,6 @@ footer {
 .service-card {
   display: flex;
   flex: 1;
-  gap: 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid #d4dde2;
   padding: 1rem;
