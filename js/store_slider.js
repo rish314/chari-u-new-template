@@ -1,30 +1,30 @@
-// 店舗画像スライダーWebComponent定義
-class StoreSliderComponent extends HTMLElement {
-    constructor() {
-        super();
+// 店舗画像スライダー定義
+class StoreSlider {
+    constructor(container) {
+        this.container = container;
         this.currentIndex = 0;
         this.images = [
             "https://chari-u.com/img/top/main01.jpg",
             "https://chari-u.com/img/top/main02.jpg", 
             "https://chari-u.com/img/top/main03.jpg",
-            "https://chari-u.com/img/top/main04.jpg"
         ];
         this.autoSlideInterval = null;
+        this.init();
     }
 
-    connectedCallback() {
+    init() {
         this.render();
         this.startAutoSlide();
     }
 
-    disconnectedCallback() {
+    destroy() {
         if (this.autoSlideInterval) {
             clearInterval(this.autoSlideInterval);
         }
     }
 
     render() {
-        this.innerHTML = `
+        this.container.innerHTML = `
             <div class="store-slider-container">
                 <div class="store-slider-wrapper">
                     ${this.images.map((image, index) => `
@@ -43,7 +43,7 @@ class StoreSliderComponent extends HTMLElement {
         `;
 
         // インジケーターのクリックイベントを追加
-        this.querySelectorAll('.indicator').forEach((indicator, index) => {
+        this.container.querySelectorAll('.indicator').forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
                 this.goToSlide(index);
             });
@@ -52,16 +52,16 @@ class StoreSliderComponent extends HTMLElement {
 
     goToSlide(index) {
         // 現在のスライドを非アクティブに
-        const currentSlide = this.querySelector('.store-slide.active');
-        const currentIndicator = this.querySelector('.indicator.active');
-        
+        const currentSlide = this.container.querySelector('.store-slide.active');
+        const currentIndicator = this.container.querySelector('.indicator.active');
+
         if (currentSlide) currentSlide.classList.remove('active');
         if (currentIndicator) currentIndicator.classList.remove('active');
 
         // 新しいスライドをアクティブに
-        const newSlide = this.querySelectorAll('.store-slide')[index];
-        const newIndicator = this.querySelectorAll('.indicator')[index];
-        
+        const newSlide = this.container.querySelectorAll('.store-slide')[index];
+        const newIndicator = this.container.querySelectorAll('.indicator')[index];
+
         if (newSlide) newSlide.classList.add('active');
         if (newIndicator) newIndicator.classList.add('active');
 
@@ -80,4 +80,10 @@ class StoreSliderComponent extends HTMLElement {
     }
 }
 
-customElements.define('store-slider', StoreSliderComponent);
+// DOMが読み込まれた後にスライダーを初期化
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderContainer = document.getElementById('store-slider');
+    if (sliderContainer) {
+        new StoreSlider(sliderContainer);
+    }
+});
