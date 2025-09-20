@@ -22,6 +22,8 @@ class FooterComponent extends HTMLElement {
             }
             const html = await response.text();
             this.innerHTML = html;
+            // After rendering the footer, update the last-updated date from news.html
+            this.updateLastUpdatedFromNews();
         } catch (error) {
             console.error('Error loading footer component:', error);
             // Fallback to a simple footer if the fetch fails
@@ -32,6 +34,27 @@ class FooterComponent extends HTMLElement {
                     </div>
                 </footer>
             `;
+        }
+    }
+
+    // Fetch the date from news.html and apply it to the footer
+    async updateLastUpdatedFromNews() {
+        try {
+            const res = await fetch('news.html', { cache: 'no-cache' });
+            if (!res.ok) return;
+            const text = await res.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(text, 'text/html');
+            const newsUpdatedEl = doc.getElementById('last-updated') || doc.querySelector('#last-updated');
+            const dateText = newsUpdatedEl ? (newsUpdatedEl.textContent || '').trim() : '';
+            if (!dateText) return;
+            const footerEl = this.querySelector('#footer-last-updated');
+            if (footerEl) {
+                footerEl.textContent = dateText;
+            }
+        } catch (e) {
+            // Silent fail – keep default footer date
+            console.debug('Footer last-updated sync skipped:', e);
         }
     }
 }
