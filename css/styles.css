@@ -154,6 +154,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .contact-cta-heading {
@@ -227,7 +228,7 @@ footer {
 @media (min-width: 768px) {
   .contact-cta-card {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     gap: 2.5rem;
     padding: 2.5rem 3rem;
   }
