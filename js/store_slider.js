@@ -5,8 +5,8 @@ class StoreSlider {
         this.currentIndex = 0;
         this.images = [
             "https://chari-u.com/img/top/main01.jpg",
-            "https://chari-u.com/img/top/main02.jpg", 
-            "https://chari-u.com/img/top/main03.jpg",
+            "/images/top/main02.jpg",
+            "/images/top/main03.jpg",
         ];
         this.autoSlideInterval = null;
         this.init();
