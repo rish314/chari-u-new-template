@@ -171,7 +171,7 @@ footer {
   gap: 0.5rem;
   padding: 0.85rem 2.25rem;
   border-radius: 9999px;
-  background-color: #006d9b;
+  background-color: #fa722d;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
@@ -181,9 +181,9 @@ footer {
 }
 
 .contact-cta-button:hover {
-  background-color: #0aaece;
+  background-color: #f5e644;
   transform: translateY(-1px);
-  box-shadow: 0 14px 24px -14px rgb(10, 174, 206);
+  box-shadow: 0 14px 24px -14px rgb(245, 230, 68);
 }
 
 .contact-cta-icon {

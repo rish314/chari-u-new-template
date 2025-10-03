@@ -23,7 +23,6 @@ class FooterComponent extends HTMLElement {
             const html = await response.text();
             this.innerHTML = html;
             // After rendering the footer, update the last-updated date from news.html
-            this.updateLastUpdatedFromNews();
         } catch (error) {
             console.error('Error loading footer component:', error);
             // Fallback to a simple footer if the fetch fails
