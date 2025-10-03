@@ -36,29 +36,7 @@ class FooterComponent extends HTMLElement {
             `;
         }
     }
-
-    // Fetch the date from news.html and apply it to the footer
-    async updateLastUpdatedFromNews() {
-        try {
-            const res = await fetch('news.html', { cache: 'no-cache' });
-            if (!res.ok) return;
-            const text = await res.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, 'text/html');
-            const newsUpdatedEl = doc.getElementById('last-updated') || doc.querySelector('#last-updated');
-            const dateText = newsUpdatedEl ? (newsUpdatedEl.textContent || '').trim() : '';
-            if (!dateText) return;
-            const footerEl = this.querySelector('#footer-last-updated');
-            if (footerEl) {
-                footerEl.textContent = dateText;
-            }
-        } catch (e) {
-            // Silent fail – keep default footer date
-            console.debug('Footer last-updated sync skipped:', e);
-        }
-    }
 }
-
 // Register the custom element
 customElements.define('footer-component', FooterComponent);
 

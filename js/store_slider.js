@@ -80,10 +80,34 @@ class StoreSlider {
     }
 }
 
+// news.htmlから更新日を取得してページ内の#last-updatedを更新
+async function updateLastUpdatedDate() {
+    try {
+        const res = await fetch('news.html', { cache: 'no-cache' });
+        if (!res.ok) return;
+        const text = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, 'text/html');
+        const newsUpdatedEl = doc.getElementById('last-updated');
+        const dateText = newsUpdatedEl ? newsUpdatedEl.textContent.trim() : '';
+        if (!dateText) return;
+        
+        // ページ内の#last-updated要素を更新
+        const mainPageEl = document.getElementById('last-updated');
+        if (mainPageEl) {
+            mainPageEl.textContent = dateText;
+        }
+    } catch (e) {
+        console.error('更新日の取得に失敗しました:', e);
+    }
+}
+
 // DOMが読み込まれた後にスライダーを初期化
 document.addEventListener('DOMContentLoaded', function() {
     const sliderContainer = document.getElementById('store-slider');
     if (sliderContainer) {
         new StoreSlider(sliderContainer);
     }
+    // 更新日を取得して表示
+    updateLastUpdatedDate();
 });
