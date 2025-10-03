@@ -171,19 +171,19 @@ footer {
   gap: 0.5rem;
   padding: 0.85rem 2.25rem;
   border-radius: 9999px;
-  background-color: #1d4ed8;
+  background-color: #006d9b;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 12px 20px -12px rgba(29, 78, 216, 0.8);
+  /*transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;*/
+  /*box-shadow: 0 12px 20px -12px rgb(74, 170, 141);*/
 }
 
 .contact-cta-button:hover {
-  background-color: #1a46c4;
+  background-color: #0aaece;
   transform: translateY(-1px);
-  box-shadow: 0 14px 24px -14px rgba(29, 78, 216, 0.8);
+  box-shadow: 0 14px 24px -14px rgb(10, 174, 206);
 }
 
 .contact-cta-icon {
