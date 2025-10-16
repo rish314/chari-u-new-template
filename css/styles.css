@@ -347,3 +347,26 @@ ol.bike-makers li {
   margin: 2rem;
   padding-left: 1rem;
 }
+
+
+/* Sale Emphasis (涙のたたき売り) */
+.sale-banner {
+  border-color: #e53768; /* match brand accent */
+  box-shadow: 0 8px 20px -8px rgba(229, 55, 104, 0.25);
+  background-image: radial-gradient(100% 120px at 0% 0%, rgba(229, 55, 104, 0.06), transparent 70%);
+}
+.sale-banner h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sale-badge {
+  display: inline-block;
+  background-color: #e53768;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.375rem;
+}
