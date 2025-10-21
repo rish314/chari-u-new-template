@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="refresh" content="3;url=/">
+    
+    <title>404 - ページが見つかりません | じてんしゃひろば遊</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="css25/tailwind.css">
+
+    <script>
+        // 3秒後に自動的にトップページへリダイレクト
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 3000);
+    </script>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+        <main class="flex-1">
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-20">
+                <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1">
+                    <div class="flex flex-col items-center justify-center min-h-[60vh] text-center">
+                        <!-- 404 Icon -->
+                        <div class="text-[#5c778a] mb-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-80V80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,172Z"></path>
+                            </svg>
+                        </div>
+                        
+                        <!-- 404 Heading -->
+                        <h1 class="text-[#101518] text-4xl font-bold leading-tight tracking-[-0.033em] mb-4">
+                            404
+                        </h1>
+                        
+                        <!-- Message -->
+                        <h2 class="text-[#101518] text-2xl font-bold leading-tight mb-4">
+                            ページが見つかりません
+                        </h2>
+                        
+                        <p class="text-[#5c778a] text-base font-normal leading-normal mb-8 max-w-[480px]">
+                            お探しのページは存在しないか、移動または削除された可能性があります。<br>
+                            <span class="font-medium">3秒後に自動的にトップページへ移動します...</span>
+                        </p>
+                        
+                        <!-- Manual redirect button -->
+                        <div class="flex gap-4 flex-wrap justify-center">
+                            <a href="/" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-[#1976d2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1565c0] transition-colors">
+                                <span class="truncate">トップページへ戻る</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
