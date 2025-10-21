@@ -1,11 +1,11 @@
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#eaeef1] px-10 py-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] fixed top-0 left-0 w-full bg-white z-10">
+<header role="banner" class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#eaeef1] px-10 py-3 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] fixed top-0 left-0 w-full bg-white z-10">
     <div id="logo">
         <a href="index.htm">
             <img src="https://chari-u.com/header/rogo.png" alt="じてんしゃひろば遊" />
         </a>
     </div>
     <!-- Desktop Navigation -->
-    <div class="desktop-nav flex flex-1 justify-end gap-8">
+    <nav role="navigation" class="desktop-nav flex flex-1 justify-end gap-8" aria-label="デスクトップメニュー">
         <div class="flex items-center gap-9">
             <a class="text-[#101518] text-sm font-medium leading-normal" href="index.htm">TOP</a>
             <a class="text-[#101518] text-sm font-medium leading-normal" href="index.htm#news">ちょこっとニュース</a>
@@ -22,7 +22,7 @@
                 </a>
             </button>
         </div>
-    </div>
+    </nav>
     <!-- Mobile Menu Toggle -->
     <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
         <!-- Hamburger Icon (default) -->
@@ -39,7 +39,7 @@
     </div>
 </header>
 
-<div class="mobile-nav" id="mobileNav">
+<nav role="navigation" class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー">
     <a href="index.htm">TOP</a>
     <a href="index.htm#news">ちょこっとニュース</a>
     <a href="index.htm#bicycles">自転車を探す</a>
@@ -53,4 +53,4 @@
             お問い合わせ
         </a>
     </button>
-</div>
+</nav>
