@@ -424,6 +424,10 @@ ol.bike-makers li {
 
 /* モバイル表示 */
 @media (max-width: 768px) {
+  .news-grid-container {
+    grid-template-columns: 1fr;
+  }
+  
   .news-grid-item {
     padding: 0.5rem 0 0.5rem 1.75rem;
     font-size: 0.9rem;
