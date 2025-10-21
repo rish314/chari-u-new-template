@@ -52,6 +52,13 @@ img {
   width: 100%;
 }
 
+@media (min-width: 480px) {
+  .\@\[480px\]:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 
 /* Layout Styles */
 .layout-container {
