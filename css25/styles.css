@@ -232,7 +232,7 @@ footer {
     flex-direction: row;
     align-items: stretch;
     gap: 2.5rem;
-    padding: 2.5rem 3rem;
+    padding: 2rem 2.5rem;
   }
 
   .contact-cta-divider {
@@ -251,8 +251,8 @@ footer {
 
 @media (max-width: 767px) {
   .contact-cta-wrapper {
-    padding: 0 1rem;
-    margin-top: 3rem;
+    padding: 0;
+    margin: 3rem 0 3rem 0;
   }
 
   .contact-cta-card {
