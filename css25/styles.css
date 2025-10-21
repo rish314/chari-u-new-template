@@ -345,6 +345,19 @@ ol.bike-makers li {
 }
 
 
+/* Logo hover tilt */
+#logo a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  #logo a { transition: none; }
+}
+#logo a:hover {
+  transform: rotate(-6deg) translateY(-1px);
+}
+
 /* Header menu hover tilt (odd/even) */
 .desktop-nav > div > a {
   display: inline-block; /* allow rotation without affecting line box */
