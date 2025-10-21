@@ -10,7 +10,6 @@ class NewsLoader {
         try {
             await this.loadNewsContent();
             this.renderNewsItems();
-            this.startAutoScroll();
         } catch (error) {
             console.error('ニュースの読み込みに失敗しました:', error);
             this.showFallbackContent();
@@ -85,33 +84,6 @@ class NewsLoader {
                 </div>
             </div>
         `;
-    }
-
-    startAutoScroll() {
-        const items = this.newsContainer.querySelectorAll('.news-item-container');
-        if (items.length < 2) return;
-
-        let currentIndex = 0;
-        const itemWidth = 340;
-        const scrollPause = 2200; // 停止時間(ms)
-        const scrollDuration = 600; // スクロールアニメーション時間(ms)
-
-        const scrollToIndex = (index) => {
-            this.newsContainer.scrollTo({
-                left: itemWidth * index,
-                behavior: 'smooth'
-            });
-        };
-
-        const autoScroll = () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            scrollToIndex(currentIndex);
-            setTimeout(autoScroll, scrollPause + scrollDuration);
-        };
-
-        // 初期位置
-        scrollToIndex(0);
-        setTimeout(autoScroll, scrollPause);
     }
 }
 
