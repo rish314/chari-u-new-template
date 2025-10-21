@@ -36,7 +36,7 @@ class StoreSlider {
                 <div class="slider-indicators">
                     ${this.images.map((_, index) => `
                         <button class="indicator ${index === 0 ? 'active' : ''}" 
-                                data-index="${index}"></button>
+                                data-index="${index}" aria-label="indicator"></button>
                     `).join('')}
                 </div>
             </div>
