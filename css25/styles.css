@@ -351,6 +351,23 @@ ol.bike-makers li {
 }
 
 
+/* bike-makers hover tilt (odd/even) */
+.bike-makers a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bike-makers a { transition: none; }
+}
+.bike-makers li:nth-child(odd) a:hover {
+  transform: rotate(-6deg) translateY(-1px);
+}
+.bike-makers li:nth-child(even) a:hover {
+  transform: rotate(6deg) translateY(-1px);
+}
+
+
 /* Logo hover tilt */
 #logo a {
   display: inline-block;
